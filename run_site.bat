@@ -1,0 +1,1 @@
+python -m streamlit run C:\Users\FABIEL\Desktop\FEIRA\streamlit\app.py --server.port 8080
