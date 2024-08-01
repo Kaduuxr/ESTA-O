@@ -11,11 +11,11 @@ def handle_request():
         temp = request.args.get('temp')
         luminosidade = request.args.get('luminosidade')
         ultra_violeta = request.args.get('ultra_violeta')
-        pressao = request.args.get('pressao') 
         umidade = request.args.get('umidade')
+        pressao = request.args.get('pressao') 
         
         try:
-            query = f"INSERT INTO temp_data (id_coletores, temp, luminosidade, ultra_violeta, umidade,pressao) VALUES ('{id_estacao}', '{temp}' ,'{luminosidade}', {ultra_violeta},'{pressao}','{umidade}');"
+            query = f"INSERT INTO temp_data (id_coletores, temp, luminosidade, ultra_violeta, umidade,pressao) VALUES ('{id_estacao}', '{temp}' ,'{luminosidade}', {ultra_violeta},'{umidade}','{pressao}');"
             send_data(query)
             
             return jsonify({"message": "Data inserted successfully"}), 200
