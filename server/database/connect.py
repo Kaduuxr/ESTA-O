@@ -28,6 +28,4 @@ def view_data(query):
     mycursor = mydb.cursor()
     mycursor.execute(query)
     mycursor.fetchall()
-  
 
-x = view_data("SELECT temp FROM estacao.temp_data ORDER BY id desc LIMIT 1")
