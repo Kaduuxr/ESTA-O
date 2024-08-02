@@ -27,4 +27,4 @@ def handle_request():
         return jsonify({"error": "Unsupported method"}), 405
 
 if __name__ == '__main__':
-    app.run(host='187.45.102.198', port=5000)
+    app.run(host='192.168.68.105', port=5000)
