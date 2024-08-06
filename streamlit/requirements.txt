@@ -1,0 +1,5 @@
+pip install streamlit-extras
+
+pip install st-star-rating
+
+pip install streamlit
